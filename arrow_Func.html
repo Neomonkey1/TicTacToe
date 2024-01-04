@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p>This example shows a function without the use of arrow function.</p>
+        <p id="test1"></p>
+        <br>
+        <p>This example shows a function with the use of arrow function.</p>
+        <p id="test2"></p>
+        <script>let hello = '';
+        hello = function(){
+            return 'Hello World.';            
+        }
+        document.getElementById('test1').innerHTML = hello();        
+        let world = '';
+        world = () => 'Hello World!';
+        document.getElementById('test2').innerHTML = world();
+        </script>
+    </body>
+</html>
